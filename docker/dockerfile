@@ -1,0 +1,6 @@
+FROM tomcat:10.0
+LABEL maintainer="sayantanbhadra@outlook.com"
+ENV TZ="Asia/Kolkata"
+ADD target/employee.war /usr/local/tomcat/webapps
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
