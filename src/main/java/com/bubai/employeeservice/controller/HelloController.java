@@ -30,7 +30,7 @@ public class HelloController {
         if(hour>12 && hour<18){
             greetings = "Good Afternoon User";
         }
-        if(hour>18 && hour<24){
+        if(hour>18){
             greetings = "Good Evening User";
         }
         return greetings;
