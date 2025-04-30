@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: employeeservice
-        image: bhadrasayantan/employeeservice:1.2
+        image: bhadrasayantan/employeeservice:1.4
         ports:
         - containerPort: 8080
         readinessProbe:

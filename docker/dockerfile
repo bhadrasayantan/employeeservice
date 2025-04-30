@@ -1,6 +1,8 @@
 FROM tomcat:10.0
 LABEL maintainer="sayantanbhadra@outlook.com"
 ENV TZ="Asia/Kolkata"
+COPY docker/context.xml /usr/local/tomcat/conf/context.xml
+COPY docker/mysql-connector-j-9.3.0.jar /usr/local/tomcat/lib
 ADD target/employee.war /usr/local/tomcat/webapps
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
